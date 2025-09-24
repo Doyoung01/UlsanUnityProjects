@@ -14,7 +14,7 @@ public class OtherBoat : MonoBehaviour
 
         if (value < 3)
         {
-            GameObject player = GameObject.Find("Player");
+            GameObject player = Player.instance.gameObject;
             dir = player.transform.position - this.transform.position;
             dir.Normalize();
             transform.forward = dir;
@@ -39,7 +39,7 @@ public class OtherBoat : MonoBehaviour
         {
             if (other.attachedRigidbody.gameObject.layer == LayerMask.NameToLayer("Player"))
             {
-                Time.timeScale = 0;
+                ResultManager.instance.ShowResultUI();
             }
         }
     }

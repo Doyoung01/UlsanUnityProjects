@@ -1,21 +1,28 @@
+using System;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
+    public static Player instance;
     public Rigidbody rb;
+    public GameObject defaultTailTarget;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        Player.instance = this;
     }
 
     void Start()
     {
-
+        POINT = 0;
     }
 
-    public float speed = 20;
-    public float angle = 180;
+    public float speed = 200;
+    public float angle = 360;
     Vector3 velocity;
     void Update()
     {
@@ -35,6 +42,54 @@ public class Player : MonoBehaviour
         rb.MovePosition(rb.transform.position + velocity * Time.deltaTime);
 
         velocity = Vector3.Lerp(velocity, Vector3.zero, Time.deltaTime * 6);
+    }
+
+    int garbageCount;
+    public Tail tailFactory;
+    public GameObject lastTail;
+    List<Tail> tails = new List<Tail>();
+
+    internal void AddGarbage(int addCount, Vector3 position)
+    {
+        garbageCount += addCount;
+
+        Tail tail = Instantiate<Tail>(tailFactory, position, Quaternion.identity);
+        
+        float tailSpeed = Mathf.Max(2, 10f - garbageCount);
+        tail.SetInfo(tailSpeed, lastTail);
+
+        lastTail = tail.gameObject;
+
+        tails.Add(tail);
+    }
+
+    int point;
+    public TextMeshProUGUI textPoint;
+
+    public int POINT
+    {
+        get { return point; }
+        set { 
+            point = value;
+            textPoint.SetText(point.ToString());
+        }
+    }
+
+    internal void CalcGarbagePoint()
+    {
+        POINT = POINT + garbageCount * garbageCount;
+        // property 사용으로 아래 코드 사용 불필요
+        // textPoint.SetText(point.ToString());
+
+        garbageCount = 0;
+
+        for (int i = 0; i < tails.Count; i++)
+        {
+            Destroy(tails[i].gameObject);
+        }
+        tails.Clear();  // 리스트 메모리 삭제
+
+        lastTail = defaultTailTarget;
     }
 }
 
