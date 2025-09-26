@@ -1,22 +1,33 @@
 using Unity.Hierarchy;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraRotation : MonoBehaviour
 {
+    // 부모 오브젝트의 PlayerInput Component를 get
+    InputAction mouseAction;
+
+    private void Awake()
+    {
+        var input = GetComponentInParent<PlayerInput>();
+        mouseAction = input.actions["Mouse"];
+    }
+
     void Start()
     {
-        
+
     }
 
     float rx, ry;   // 누적값, 회전축 기준이므로 rx에 my를 합할 것
     public float rotSpeed = 10f;
     void Update()
     {
-        float mx = Input.GetAxis("Mouse X");
-        float my = Input.GetAxis("Mouse Y");
+        var mouseDelta = mouseAction.ReadValue<Vector2>();
+        //float mx = Input.GetAxis("Mouse X");
+        //float my = Input.GetAxis("Mouse Y");
 
-        rx -= my * Time.deltaTime * rotSpeed;
-        ry += mx * Time.deltaTime * rotSpeed;
+        rx -= mouseDelta.y * Time.deltaTime * rotSpeed;
+        ry += mouseDelta.x * Time.deltaTime * rotSpeed;
 
         rx = Mathf.Clamp(rx, -60, 90);
 
