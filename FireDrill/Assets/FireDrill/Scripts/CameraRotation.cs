@@ -6,6 +6,7 @@ public class CameraRotation : MonoBehaviour
 {
     // 부모 오브젝트의 PlayerInput Component를 get
     InputAction mouseAction;
+    public Transform player;
 
     private void Awake()
     {
@@ -29,11 +30,20 @@ public class CameraRotation : MonoBehaviour
         rx -= mouseDelta.y * Time.deltaTime * rotSpeed;
         ry += mouseDelta.x * Time.deltaTime * rotSpeed;
 
-        rx = Mathf.Clamp(rx, -60, 90);
+        rx = Mathf.Clamp(rx, -60, 40);
+    }
 
+    private void FixedUpdate()
+    {
         // 오일러 앵글 이용
-        transform.eulerAngles = new Vector3(rx, ry, 0);
+        // transform.eulerAngles = new Vector3(rx, ry, 0);
+        // player.eulerAngles = new Vector3(0, ry, 0);
+
         // 사원수 이용
-        // transform.rotation = Quaternion.Euler(rx, ry, 0);
+        // 카메라 회전 보간처리
+        transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(rx, 0, 0), 1);
+        
+        // 플레이어 몸 회전 보간처리
+        player.rotation = Quaternion.Lerp(player.rotation, Quaternion.Euler(0, ry, 0), 1);
     }
 }
