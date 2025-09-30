@@ -1,13 +1,15 @@
 using JetBrains.Annotations;
 using System;
+using System.Collections;
 using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     CharacterController cc;
-    InputAction moveAction, jumpAction, runAction, eventAction, putAction, actionAction;
+    InputAction moveAction, jumpAction, runAction, eventAction, putAction, actionAction, throwAction;
 
     public float gravity = -9.81f;
     public float jumpPower = 20f;
@@ -16,9 +18,63 @@ public class Player : MonoBehaviour
     public int maxJumpCount = 1;
     Animator anim;
     bool bRun;
+    public GameObject ballFactory;
+    public Transform ballPoint;
+
+    float curHP;
+    public float maxHP = 10f;
+    public Slider sliderHP;
+    public Image imageDamage;
+    bool bDamageEffect;
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.collider.CompareTag("FireObject"))
+        {
+            curHP--;
+            sliderHP.value = curHP;
+            if (curHP <= 0)
+            {
+                ResultManager.Instance.ShowUI();
+                ResultManager.Instance.failureUI.SetActive(true);
+            }
+
+            if (!bDamageEffect)
+            {
+                bDamageEffect = true;
+                StartCoroutine(IEDamage());
+            }
+        }
+        else if (hit.collider.name == "Goal")
+        {
+            print("도착");
+            ResultManager.Instance.ShowUI();
+            ResultManager.Instance.successUI.SetActive(true);
+        }
+    }
+
+    IEnumerator IEDamage()
+    {
+        Color c = imageDamage.color;
+        
+        for (float t = 0.75f; t > 0; t -= Time.deltaTime * 2)
+        {
+            c.a = t;
+            imageDamage.color = c;
+            yield return new WaitForSeconds(Time.deltaTime * 2);
+        }
+        c.a = 0;
+        imageDamage.color = c;
+        bDamageEffect = false;
+    }
 
     private void Awake()
     {
+        sliderHP.minValue = 0;
+        sliderHP.maxValue = maxHP;
+        sliderHP.value = maxHP;
+        curHP = maxHP;
+
         anim = GetComponentInChildren<Animator>();
 
         var input = GetComponentInParent<PlayerInput>();
@@ -28,6 +84,12 @@ public class Player : MonoBehaviour
         eventAction = input.actions["Event"];
         putAction = input.actions["Put"];
         actionAction = input.actions["Action"];
+        throwAction = input.actions["ThrowBall"];
+
+        throwAction.performed += c =>
+        {
+            Instantiate(ballFactory, ballPoint.position, ballPoint.rotation);
+        };
 
         eventAction.performed += OnMyEvent;
         putAction.performed += c => Put();
@@ -93,6 +155,15 @@ public class Player : MonoBehaviour
             {
                 print("잡았다");
                 Grab(ref hitInfo);
+            }
+            else if (hitInfo.transform.root.tag.Equals("NPC"))
+            {
+                print("사람이다");
+                var npc = hitInfo.transform.GetComponent<NPC>();
+                if (npc)
+                {
+                    npc.Getup();
+                }
             }
         }
     }

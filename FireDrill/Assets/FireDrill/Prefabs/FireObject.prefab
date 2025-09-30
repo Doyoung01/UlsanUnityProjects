@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7062028014673605872}
   m_Layer: 0
   m_Name: FireObject
-  m_TagString: Untagged
+  m_TagString: FireObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,14 +26,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6579453382222665193}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9507595, z: -0, w: -0.3099298}
+  m_LocalRotation: {x: 0, y: 0.9507595, z: 0, w: 0.30992988}
   m_LocalPosition: {x: -10.676, y: 16.6, z: 20.305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2629980010719563336}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 143.89, z: 0}
 --- !u!65 &2330145694868733898
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51,7 +51,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
