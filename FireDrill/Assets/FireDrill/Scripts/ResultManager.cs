@@ -33,6 +33,7 @@ public class ResultManager : MonoBehaviour
 
     public void OnRestart()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
