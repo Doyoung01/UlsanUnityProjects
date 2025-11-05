@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\PhotonFusion2Example\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5F1FC2-408C-D277-9C02-07B6436A5470}|Assembly-CSharp.csproj|C:\\Projects\\PhotonFusion2Example\\assets\\myexample\\scripts\\connmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5F1FC2-408C-D277-9C02-07B6436A5470}|Assembly-CSharp.csproj|solutionrelative:assets\\myexample\\scripts\\connmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5F1FC2-408C-D277-9C02-07B6436A5470}|Assembly-CSharp.csproj|c:\\projects\\photonfusion2example\\assets\\myexample\\scripts\\roominfoui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5F1FC2-408C-D277-9C02-07B6436A5470}|Assembly-CSharp.csproj|solutionrelative:assets\\myexample\\scripts\\roominfoui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79C2D577-E4D0-916F-6FAD-4CF06980AD64}|PhotonVoice.csproj|c:\\projects\\photonfusion2example\\assets\\photon\\photonvoice\\code\\voicelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79C2D577-E4D0-916F-6FAD-4CF06980AD64}|PhotonVoice.csproj|solutionrelative:assets\\photon\\photonvoice\\code\\voicelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5F1FC2-408C-D277-9C02-07B6436A5470}|Assembly-CSharp.csproj|C:\\Projects\\PhotonFusion2Example\\assets\\myexample\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5F1FC2-408C-D277-9C02-07B6436A5470}|Assembly-CSharp.csproj|solutionrelative:assets\\myexample\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5F1FC2-408C-D277-9C02-07B6436A5470}|Assembly-CSharp.csproj|C:\\Projects\\PhotonFusion2Example\\assets\\myexample\\scripts\\weapontrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5F1FC2-408C-D277-9C02-07B6436A5470}|Assembly-CSharp.csproj|solutionrelative:assets\\myexample\\scripts\\weapontrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5F1FC2-408C-D277-9C02-07B6436A5470}|Assembly-CSharp.csproj|C:\\Projects\\PhotonFusion2Example\\assets\\myexample\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5F1FC2-408C-D277-9C02-07B6436A5470}|Assembly-CSharp.csproj|solutionrelative:assets\\myexample\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2A2B970-7078-F2BD-66C6-7A7004B7AE4D}|Fusion.Unity.csproj|C:\\Projects\\PhotonFusion2Example\\assets\\photon\\fusion\\runtime\\networkcharactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2A2B970-7078-F2BD-66C6-7A7004B7AE4D}|Fusion.Unity.csproj|solutionrelative:assets\\photon\\fusion\\runtime\\networkcharactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F5F1FC2-408C-D277-9C02-07B6436A5470}|Assembly-CSharp.csproj|C:\\Projects\\PhotonFusion2Example\\assets\\myexample\\scripts\\billboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F5F1FC2-408C-D277-9C02-07B6436A5470}|Assembly-CSharp.csproj|solutionrelative:assets\\myexample\\scripts\\billboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoomInfoUI.cs",
+              "DocumentMoniker": "C:\\Projects\\PhotonFusion2Example\\Assets\\MyExample\\Scripts\\RoomInfoUI.cs",
+              "RelativeDocumentMoniker": "Assets\\MyExample\\Scripts\\RoomInfoUI.cs",
+              "ToolTip": "C:\\Projects\\PhotonFusion2Example\\Assets\\MyExample\\Scripts\\RoomInfoUI.cs",
+              "RelativeToolTip": "Assets\\MyExample\\Scripts\\RoomInfoUI.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T08:04:10.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VoiceLogger.cs",
+              "DocumentMoniker": "C:\\Projects\\PhotonFusion2Example\\Assets\\Photon\\PhotonVoice\\Code\\VoiceLogger.cs",
+              "RelativeDocumentMoniker": "Assets\\Photon\\PhotonVoice\\Code\\VoiceLogger.cs",
+              "ToolTip": "C:\\Projects\\PhotonFusion2Example\\Assets\\Photon\\PhotonVoice\\Code\\VoiceLogger.cs",
+              "RelativeToolTip": "Assets\\Photon\\PhotonVoice\\Code\\VoiceLogger.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAjwCgAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T07:01:14.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerAttack.cs",
+              "DocumentMoniker": "C:\\Projects\\PhotonFusion2Example\\Assets\\MyExample\\Scripts\\PlayerAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\MyExample\\Scripts\\PlayerAttack.cs",
+              "ToolTip": "C:\\Projects\\PhotonFusion2Example\\Assets\\MyExample\\Scripts\\PlayerAttack.cs",
+              "RelativeToolTip": "Assets\\MyExample\\Scripts\\PlayerAttack.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T04:41:34.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerMove.cs",
+              "DocumentMoniker": "C:\\Projects\\PhotonFusion2Example\\Assets\\MyExample\\Scripts\\PlayerMove.cs",
+              "RelativeDocumentMoniker": "Assets\\MyExample\\Scripts\\PlayerMove.cs",
+              "ToolTip": "C:\\Projects\\PhotonFusion2Example\\Assets\\MyExample\\Scripts\\PlayerMove.cs",
+              "RelativeToolTip": "Assets\\MyExample\\Scripts\\PlayerMove.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAjwC8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T05:37:13.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConnManager.cs",
+              "DocumentMoniker": "C:\\Projects\\PhotonFusion2Example\\Assets\\MyExample\\Scripts\\ConnManager.cs",
+              "RelativeDocumentMoniker": "Assets\\MyExample\\Scripts\\ConnManager.cs",
+              "ToolTip": "C:\\Projects\\PhotonFusion2Example\\Assets\\MyExample\\Scripts\\ConnManager.cs",
+              "RelativeToolTip": "Assets\\MyExample\\Scripts\\ConnManager.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAADgvyoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T01:47:37.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeaponTrigger.cs",
+              "DocumentMoniker": "C:\\Projects\\PhotonFusion2Example\\Assets\\MyExample\\Scripts\\WeaponTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\MyExample\\Scripts\\WeaponTrigger.cs",
+              "ToolTip": "C:\\Projects\\PhotonFusion2Example\\Assets\\MyExample\\Scripts\\WeaponTrigger.cs",
+              "RelativeToolTip": "Assets\\MyExample\\Scripts\\WeaponTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T05:34:44.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NetworkCharacterController.cs",
+              "DocumentMoniker": "C:\\Projects\\PhotonFusion2Example\\Assets\\Photon\\Fusion\\Runtime\\NetworkCharacterController.cs",
+              "RelativeDocumentMoniker": "Assets\\Photon\\Fusion\\Runtime\\NetworkCharacterController.cs",
+              "ToolTip": "C:\\Projects\\PhotonFusion2Example\\Assets\\Photon\\Fusion\\Runtime\\NetworkCharacterController.cs",
+              "RelativeToolTip": "Assets\\Photon\\Fusion\\Runtime\\NetworkCharacterController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAWwGEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T07:24:17.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Billboard.cs",
+              "DocumentMoniker": "C:\\Projects\\PhotonFusion2Example\\Assets\\MyExample\\Scripts\\Billboard.cs",
+              "RelativeDocumentMoniker": "Assets\\MyExample\\Scripts\\Billboard.cs",
+              "ToolTip": "C:\\Projects\\PhotonFusion2Example\\Assets\\MyExample\\Scripts\\Billboard.cs",
+              "RelativeToolTip": "Assets\\MyExample\\Scripts\\Billboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T02:40:04.627Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
